@@ -150,13 +150,6 @@ const stages=MODEL.stages, personas=MODEL.personas, cells=MODEL.cells, gaps=MODE
 const tbl=document.getElementById('grid');
 
 // legend
-const lg=document.getElementById('legend');
-Object.keys(WSD).forEach(code=>{
-  const it=document.createElement('span'); it.className='it';
-  it.innerHTML=`<span class="sw" style="background:${WSD[code].color}"></span>${code} ${esc(WSD[code].short)}`;
-  lg.appendChild(it);
-});
-
 let thead='<thead><tr><th class="arc corner">JOURNEY ARC</th>';
 let i=0;
 while(i<stages.length){
