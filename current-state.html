@@ -95,6 +95,38 @@
   #fly .close{font-size:12px;color:var(--teal-d);background:#e8f6f8;border:1px solid #bfe3e8;
        border-radius:7px;padding:5px 12px;cursor:pointer;font-family:inherit;font-weight:600}
   .foot{font-size:11px;color:var(--muted);margin-top:12px;line-height:1.5}
+.foot{
+    font-size:11px;
+    color:var(--muted);
+    margin-top:12px;
+    line-height:1.5;
+}
+
+/* Add this below */
+
+.nav {
+    display:flex;
+    gap:10px;
+    margin-left:20px;
+}
+
+.nav a {
+    background:var(--teal);
+    color:#fff;
+    text-decoration:none;
+    padding:8px 16px;
+    border-radius:6px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.nav a:hover {
+    background:var(--teal-d);
+}
+
+.nav a.active {
+    background:var(--navy);
+}
 </style>
 </head>
 <body>
